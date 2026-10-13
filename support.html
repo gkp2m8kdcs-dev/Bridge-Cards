@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Support — Bridge Cards</title>
+<meta name="description" content="Support, contact, and Terms of Use for Bridge Cards. Reach us at chekinaekaterina093@gmail.com." />
+<meta name="theme-color" content="#0B1020" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230B1020'/%3E%3Cpath d='M8 44 Q32 12 56 44' stroke='%238CC8F5' stroke-width='4' fill='none' stroke-linecap='round'/%3E%3Crect x='8' y='40' width='10' height='14' rx='2' fill='%23F4F1E6'/%3E%3Crect x='46' y='40' width='10' height='14' rx='2' fill='%23F4F1E6'/%3E%3C/svg%3E" />
+<style>
+  :root {
+    --bg-top: #0B1020;
+    --bg-bottom: #05060E;
+    --muted: #A6B0C8;
+    --accent: #8CC8F5;
+    --accent-2: #6BDC9E;
+    --line: rgba(255,255,255,0.08);
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #E8ECF6;
+    background: linear-gradient(180deg, var(--bg-top) 0%, var(--bg-bottom) 100%);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .container { max-width: 900px; margin: 0 auto; padding: 0 24px; }
+  header {
+    border-bottom: 1px solid var(--line);
+    background: rgba(11, 16, 32, 0.6);
+    backdrop-filter: blur(10px);
+  }
+  .nav {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 14px 0;
+  }
+  .brand {
+    display: flex; align-items: center; gap: 10px; font-weight: 700;
+  }
+  .brand-mark {
+    width: 30px; height: 30px; border-radius: 8px;
+    background: linear-gradient(135deg, #1B2545 0%, #0B1020 100%);
+    border: 1px solid var(--line);
+    display: grid; place-items: center;
+  }
+  .brand-mark svg { width: 22px; height: 22px; }
+  .nav-links { display: flex; gap: 18px; font-size: 14.5px; }
+  .nav-links a { color: #D6DBEA; }
+  @media (max-width: 640px) { .nav-links { display: none; } }
+
+  main { padding: 60px 0 60px; }
+  .lead h1 {
+    font-size: clamp(30px, 4.2vw, 44px);
+    margin: 0 0 12px;
+    letter-spacing: -0.4px;
+  }
+  .lead p { color: #C4CCDF; font-size: 17px; max-width: 720px; }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 30px;
+  }
+  @media (max-width: 760px) { .grid { grid-template-columns: 1fr; } }
+  .card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 22px;
+  }
+  .card h2 { margin: 0 0 8px; font-size: 18px; }
+  .card p { margin: 0; color: #B7BFD3; font-size: 14.5px; }
+  .card .icon {
+    width: 36px; height: 36px;
+    border-radius: 10px;
+    background: rgba(140,200,245,0.10);
+    color: var(--accent);
+    display: grid; place-items: center;
+    margin-bottom: 12px;
+  }
+
+  .contact-box {
+    margin-top: 24px;
+    padding: 22px;
+    border-radius: 16px;
+    border: 1px solid var(--line);
+    background: linear-gradient(135deg, rgba(140,200,245,0.08), rgba(107,220,158,0.05));
+    display: flex; flex-wrap: wrap; gap: 14px; align-items: center; justify-content: space-between;
+  }
+  .contact-box strong { color: #E8ECF6; }
+  .email-pill {
+    display: inline-block;
+    background: rgba(11,16,32,0.6);
+    border: 1px solid rgba(140,200,245,0.3);
+    color: var(--accent);
+    padding: 10px 14px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 14.5px;
+  }
+
+  .section { margin-top: 50px; }
+  .section h2 {
+    font-size: 24px;
+    margin: 0 0 8px;
+    letter-spacing: -0.2px;
+  }
+  .section .sub { color: var(--muted); max-width: 720px; }
+  .qa-list {
+    margin-top: 18px;
+    border-top: 1px solid var(--line);
+  }
+  .qa {
+    border-bottom: 1px solid var(--line);
+    padding: 16px 0;
+  }
+  .qa summary {
+    cursor: pointer;
+    list-style: none;
+    display: flex; justify-content: space-between; align-items: center;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .qa summary::-webkit-details-marker { display: none; }
+  .qa summary .chev { transition: transform 0.2s ease; }
+  .qa[open] summary .chev { transform: rotate(180deg); }
+  .qa p { color: #B7BFD3; margin: 10px 0 0; }
+
+  /* Terms block */
+  .terms {
+    margin-top: 28px;
+    background: rgba(255,255,255,0.02);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 26px;
+  }
+  .terms h3 {
+    font-size: 18px;
+    margin: 22px 0 6px;
+  }
+  .terms h3:first-child { margin-top: 0; }
+  .terms p, .terms li { color: #C4CCDF; }
+  .terms ul, .terms ol { padding-left: 22px; }
+  .updated { color: var(--muted); margin-bottom: 16px; font-size: 14.5px; }
+
+  footer {
+    border-top: 1px solid var(--line);
+    padding: 28px 0 40px;
+    color: #8893AE;
+    font-size: 14px;
+  }
+  footer .row {
+    display: flex; flex-wrap: wrap; gap: 14px; justify-content: space-between; align-items: center;
+  }
+  footer a { color: #C4CCDF; }
+</style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <div class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" fill="none">
+            <path d="M8 44 Q32 12 56 44" stroke="#8CC8F5" stroke-width="4" fill="none" stroke-linecap="round"/>
+            <rect x="8" y="40" width="10" height="14" rx="2" fill="#F4F1E6"/>
+            <rect x="46" y="40" width="10" height="14" rx="2" fill="#F4F1E6"/>
+          </svg>
+        </div>
+        <span>Bridge Cards</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="#terms">Terms</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container lead">
+      <h1>Support</h1>
+      <p>
+        Need help with Bridge Cards, found a bug, or just want to share feedback? Our small team reads every
+        message. Pick the channel that suits you below.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <div class="icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="m22 6-10 7L2 6"/></svg>
+          </div>
+          <h2>Email support</h2>
+          <p>Best for bug reports, account-style questions, and feature requests. We typically reply within 2 business days.</p>
+        </div>
+        <div class="card">
+          <div class="icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l4-4 4 4 5-5"/></svg>
+          </div>
+          <h2>In-app help</h2>
+          <p>Open Bridge Cards, go to <em>Settings → Help</em> to send a report that includes your device model and app version (no personal data is attached).</p>
+        </div>
+        <div class="card">
+          <div class="icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 9h.01"/><path d="M15 9h.01"/><path d="M8 15s1.5 2 4 2 4-2 4-2"/></svg>
+          </div>
+          <h2>Gameplay tips</h2>
+          <p>Tap a column to select its top card, then tap an adjacent column to swap. Build a smooth arch with the peak in the middle to maximize your stability score.</p>
+        </div>
+        <div class="card">
+          <div class="icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9"/><path d="M3 4v5h5"/></svg>
+          </div>
+          <h2>Reset progress</h2>
+          <p>Open <em>Settings → Reset Data</em> in the app to clear your local records and gallery photos. The action cannot be undone.</p>
+        </div>
+      </div>
+
+      <div class="contact-box">
+        <div>
+          <strong>Contact us directly:</strong><br />
+          <span class="email-pill">
+            <a href="mailto:chekinaekaterina093@gmail.com">chekinaekaterina093@gmail.com</a>
+          </span>
+        </div>
+        <a class="btn" style="display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#8CC8F5 0%,#6BDC9E 100%);color:#0B1020;padding:12px 18px;border-radius:12px;font-weight:600;" href="mailto:chekinaekaterina093@gmail.com">
+          Email support
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <section class="section">
+        <h2>Frequently asked questions</h2>
+        <p class="sub">Quick answers before you write in.</p>
+        <div class="qa-list">
+          <details class="qa">
+            <summary>Where is my data stored? <span class="chev">▾</span></summary>
+            <p>Everything stays on your device. Records and photos live in the app's private container, and they are removed when you uninstall Bridge Cards or use <em>Settings → Reset Data</em>.</p>
+          </details>
+          <details class="qa">
+            <summary>The app feels stuck on a column. What should I do? <span class="chev">▾</span></summary>
+            <p>Some columns can have no valid swap that improves your arch. Tap the same column again to deselect, then try a different pair. Stability rewards a smooth arch shape, not random swaps.</p>
+          </details>
+          <details class="qa">
+            <summary>How do I unlock the next workshop? <span class="chev">▾</span></summary>
+            <p>Send the car across any bridge with a stability score that meets or exceeds the workshop's target. The next workshop will then be available in the Levels tab.</p>
+          </details>
+          <details class="qa">
+            <summary>Can I play offline? <span class="chev">▾</span></summary>
+            <p>Yes. Bridge Cards is fully offline. You don't need Wi-Fi or mobile data to play.</p>
+          </details>
+          <details class="qa">
+            <summary>Is the app translated into other languages? <span class="chev">▾</span></summary>
+            <p>The first release ships in English. Additional languages may be added in future updates.</p>
+          </details>
+        </div>
+      </section>
+
+      <section class="section" id="terms">
+        <h2>Terms of Use</h2>
+        <p class="sub">Please read these terms before using Bridge Cards. They form the agreement between you and us.</p>
+
+        <div class="terms">
+          <p class="updated">Last updated: January 1, 2026</p>
+
+          <h3>1. Acceptance of these terms</h3>
+          <p>
+            By installing or using Bridge Cards (the "App"), you agree to these Terms of Use. If you do not
+            agree, please do not install or use the App.
+          </p>
+
+          <h3>2. License</h3>
+          <p>
+            Subject to your compliance with these Terms and the App Store's Standard End User License Agreement,
+            we grant you a personal, non-exclusive, non-transferable, revocable license to use one copy of the
+            App on an Apple-branded device that you own or control, solely for your personal, non-commercial
+            entertainment.
+          </p>
+
+          <h3>3. No account, no purchases</h3>
+          <p>
+            Bridge Cards is free to download and does not require an account. The App contains no in-app
+            purchases, subscriptions, or third-party advertising. If that ever changes, we will update these
+            terms and clearly disclose the change in the App.
+          </p>
+
+          <h3>4. Acceptable use</h3>
+          <p>You agree not to:</p>
+          <ul>
+            <li>Reverse engineer, decompile, or attempt to extract the source code of the App, except as expressly permitted by applicable law.</li>
+            <li>Modify, translate, or create derivative works based on the App.</li>
+            <li>Use the App for any unlawful purpose or in any manner that could damage, disable, overburden, or impair our services.</li>
+            <li>Remove or alter any proprietary notices or labels on the App.</li>
+          </ul>
+
+          <h3>5. Your content</h3>
+          <p>
+            The App may allow you to capture or import photos into your local Gallery. You retain all rights to
+            those photos. We do not access, upload, or use them. You are responsible for the photos you create
+            or import and for ensuring that you have the right to use them.
+          </p>
+
+          <h3>6. Intellectual property</h3>
+          <p>
+            The App, including its design, code, graphics, sounds, and copy, is owned by us or our licensors and
+            is protected by copyright, trademark, and other laws. "Bridge Cards" and the Bridge Cards logo are
+            our trademarks. All other trademarks are the property of their respective owners.
+          </p>
+
+          <h3>7. Third-party services and Apple</h3>
+          <p>
+            The App is provided through the Apple App Store. Your use of the App is also subject to Apple's
+            terms, including the Apple Media Services Terms and Conditions. Apple is not responsible for the
+            App or its content, and Apple has no obligation to provide maintenance or support.
+          </p>
+          <p>
+            To the extent that the App uses standard iOS capabilities such as the camera or photo library, your
+            use of those capabilities is subject to Apple's applicable terms and your in-device privacy
+            settings.
+          </p>
+
+          <h3>8. Disclaimer of warranties</h3>
+          <p>
+            The App is provided "as is" and "as available," without warranties of any kind, express or implied,
+            including without limitation implied warranties of merchantability, fitness for a particular
+            purpose, and non-infringement. We do not warrant that the App will be uninterrupted, error-free,
+            or free of harmful components.
+          </p>
+
+          <h3>9. Limitation of liability</h3>
+          <p>
+            To the maximum extent permitted by law, in no event shall we be liable for any indirect, incidental,
+            special, consequential, or punitive damages, or any loss of data, profits, or business, arising out
+            of or in connection with your use of the App, even if we have been advised of the possibility of
+            such damages. In any case, our aggregate liability for any claim arising under these Terms shall
+            not exceed the amount you paid for the App (which is currently zero).
+          </p>
+
+          <h3>10. Changes to the App and to these Terms</h3>
+          <p>
+            We may update the App from time to time to add features, fix bugs, or improve performance. We may
+            also update these Terms; if we do, we will revise the "Last updated" date above. Material changes
+            will be highlighted in the App or on this page before they take effect. Your continued use of the
+            App after the effective date means you accept the updated Terms.
+          </p>
+
+          <h3>11. Termination</h3>
+          <p>
+            These Terms remain in effect until terminated. You may terminate them at any time by uninstalling
+            the App. We may terminate or suspend your license if you breach these Terms. Upon termination, you
+            must stop using the App and remove all copies from your devices.
+          </p>
+
+          <h3>12. Governing law</h3>
+          <p>
+            These Terms are governed by the laws of the jurisdiction in which the developer resides, without
+            regard to its conflict-of-laws rules. If any provision of these Terms is held to be invalid or
+            unenforceable, the remaining provisions will remain in full force and effect.
+          </p>
+
+          <h3>13. Contact</h3>
+          <p>
+            Questions about these Terms? Write to us at
+            <a href="mailto:chekinaekaterina093@gmail.com">chekinaekaterina093@gmail.com</a>.
+          </p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container row">
+      <div>© 2026 Bridge Cards. Crafted in Misti's Workshop.</div>
+      <div>
+        <a href="index.html">Home</a> ·
+        <a href="privacy.html">Privacy</a> ·
+        <a href="#terms">Terms of Use</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
